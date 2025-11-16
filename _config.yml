@@ -8,7 +8,7 @@ markdown: kramdown
 destination: /var/www/aethergrid.distributedcomputeproject.org
 baseurl: ""
 
-nav_categories : ["Overview"]
+nav_categories : ["Overview", "Get Involved"]
 
 # Search Settings
 
@@ -25,7 +25,7 @@ small_logo_path: /images/aethergrid-superbold.png
 
 github:
   owner_name: The-Distributed-Computing-Project
-  repository_name: distributedcomputeproject.org
+  repository_name: aethergrid.distributedcomputeproject.org
   branch: main
 
 favicon:

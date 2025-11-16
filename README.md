@@ -3,11 +3,11 @@ category: Overview
 permalink : /
 nav_order : 1
 layout : default
-title : Home
+title : AetherGrid
 ---
 
-<div align = center>
-<img style="height:10vw" src="images/aethergrid.png"/>
+<div align=center style="align-content:center">
+<img style="width:90%" src="https://github.com/The-Distributed-Computing-Project/AetherGrid/blob/dev/Media/aethergrid-solid-high.png?raw=true"/>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -23,8 +23,6 @@ $(document).ready(function(){
 
 [![Badge License]][License]   [![Button Discord]][Discord Server]      [![Badge Blockchain]][Blockchain]
 
-
-<br>
 
 A unique P2P blockchain built in C++, with a trading client and a miner. This crypto can be bought, traded, sold, mined, or used just like any other. What sets it apart though is how it can be used, and the technique for mining. It is based on sharing mining computing hardware with developers to run their programs better and compute a large amount of data quickly, using Distributed Computing. Anybody can submit code using the client to be run across the peer-to-peer network, and will pay for that using this crypto. [What sets this crypto apart?](./#condensing).
 

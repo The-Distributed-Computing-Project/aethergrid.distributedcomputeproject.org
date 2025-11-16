@@ -125,6 +125,25 @@ title : Join Waitlist
 
     .message ul {
         margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .already-registered {
+        text-align: center;
+        color: #6fd76f;
+    }
+
+    .already-registered p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .already-registered .subtitle {
+        color: #b0b0b0;
+    }
+
+    .hidden {
+        display: none !important;
     }
 
     @keyframes slideIn {
@@ -139,12 +158,19 @@ title : Join Waitlist
     }
 </style>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <div class="uicontainer">
 <div class="container">
 <h1>Join Our Waitlist</h1>
 <p class="subtitle">Be the first to know when we launch</p>
 
 <div id="messageBox" class="message"></div>
+
+<div id="alreadyRegistered" class="already-registered hidden">
+    <p>✓ You're already on the waitlist!</p>
+    <p class="subtitle">We'll notify you when we launch.</p>
+</div>
 
 <form id="waitlistForm">
 <div class="form-group">
@@ -173,48 +199,99 @@ title : Join Waitlist
     const form = document.getElementById('waitlistForm');
     const messageBox = document.getElementById('messageBox');
     const submitBtn = document.getElementById('submitBtn');
+    const alreadyRegistered = document.getElementById('alreadyRegistered');
+    
+    const STORAGE_KEY = 'waitlist_submitted';
 
-    form.addEventListener('submit', async (e) => {
+    function checkIfAlreadySubmitted() {
+        const submitted = localStorage.getItem(STORAGE_KEY);
+        if (submitted === 'true') {
+            form.classList.add('hidden');
+            alreadyRegistered.classList.remove('hidden');
+            return true;
+        }
+        return false;
+    }
+
+    checkIfAlreadySubmitted();
+
+    form.addEventListener('submit', function(e) {
         e.preventDefault();
+        e.stopPropagation();
         
-        // Disable submit button
+        console.log('Form submitted');
+        
         submitBtn.disabled = true;
         submitBtn.textContent = 'Submitting...';
         
-        // Hide previous messages
         messageBox.classList.remove('show', 'success', 'error');
         
-        // Collect form data
         const formData = new FormData(form);
         formData.append('submit', '1');
         
-        try {
-            const response = await fetch('../tools/addtowaitlist.php', {
-                method: 'POST',
-                body: formData
-            });
+        console.log('Sending data to server...');
+        
+        fetch('../tools/addtowaitlist.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            console.log('Response status:', response.status);
+            return response.text();
+        })
+        .then(text => {
+            console.log('Response text:', text);
             
-            const text = await response.text();
+            let data;
+            try {
+                data = JSON.parse(text);
+                console.log('Parsed JSON:', data);
+            } catch (e) {
+                console.error('JSON parse error:', e);
+                if (text.includes('Data saved successfully')) {
+                    showMessage('success', 'Thank you! You\'ve been added to our waitlist.');
+                    form.reset();
+                    localStorage.setItem(STORAGE_KEY, 'true');
+                    
+                    setTimeout(() => {
+                        form.classList.add('hidden');
+                        alreadyRegistered.classList.remove('hidden');
+                        messageBox.classList.remove('show');
+                    }, 2000);
+                    return;
+                } else {
+                    showMessage('error', 'An unexpected error occurred. Please try again.');
+                    console.error('Response was not JSON:', text);
+                    return;
+                }
+            }
             
-            // Check if the response indicates success
-            if (text.includes('Data saved successfully')) {
+            if (data.success) {
                 showMessage('success', 'Thank you! You\'ve been added to our waitlist.');
                 form.reset();
-            } else if (text.includes('error')) {
-                // Try to extract error messages from the response
-                const errorMessages = extractErrors(text);
-                showMessage('error', errorMessages);
+                localStorage.setItem(STORAGE_KEY, 'true');
+                
+                setTimeout(() => {
+                    form.classList.add('hidden');
+                    alreadyRegistered.classList.remove('hidden');
+                    messageBox.classList.remove('show');
+                }, 2000);
+            } else if (data.errors && data.errors.length > 0) {
+                showMessage('error', data.errors);
             } else {
                 showMessage('error', 'An unexpected error occurred. Please try again.');
             }
-            
-        } catch (error) {
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
             showMessage('error', 'Network error. Please check your connection and try again.');
-        } finally {
-            // Re-enable submit button
+        })
+        .finally(() => {
             submitBtn.disabled = false;
             submitBtn.textContent = 'Join Waitlist';
-        }
+        });
+        
+        return false;
     });
 
     function showMessage(type, content) {
@@ -224,16 +301,5 @@ title : Join Waitlist
         } else {
             messageBox.innerHTML = '<ul>' + content.map(err => `<li>${err}</li>`).join('') + '</ul>';
         }
-    }
-
-    function extractErrors(html) {
-        // This is a simple extraction - you might need to adjust based on your PHP output
-        const errors = [];
-        if (html.includes('Name is required')) errors.push('Name is required');
-        if (html.includes('Email is required')) errors.push('Email is required');
-        if (html.includes('valid email')) errors.push('Please enter a valid email address');
-        if (html.includes('Profession is required')) errors.push('Profession is required');
-        
-        return errors.length > 0 ? errors : ['Please fill in all required fields correctly.'];
     }
 </script>

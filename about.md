@@ -1,4 +1,3 @@
-Hidden
 ---
 category: Overview
 nav_order : 1
@@ -42,4 +41,4 @@ The Distributed Computing Project operates on a simple principle: connect comput
 
 <!----------------------------------------------------------------------------->
 
-[Installation]: Installation.html
+[Installation]: installation

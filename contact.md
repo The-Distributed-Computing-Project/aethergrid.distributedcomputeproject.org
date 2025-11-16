@@ -1,9 +1,5 @@
-Hidden
 ---
-category: Overview
-nav_order : 6
 layout : default
-title : Contact
 ---
 
 # Contact

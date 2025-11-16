@@ -24,6 +24,10 @@ footer_right: "<a id=\"last-modified\" href=\"\"></a>"
 home: /
 small_logo_path: /images/dodecahedron.png
 
+email: "samuelhparent@gmail.com"
+title: "AetherGrid"
+description: "A distributed computing platform for the people"
+
 github:
   owner_name: The-Distributed-Computing-Project
   repository_name: aethergrid.distributedcomputeproject.org

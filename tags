@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/sam/Code/aethergrid.distributedcomputeproject.org/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+.caution	assets/custom.scss	/^.tip,.version,.note,.caution{$/;"	c
+.note	assets/custom.scss	/^.tip,.version,.note,.caution{$/;"	c
+.tip	assets/custom.scss	/^.tip,.version,.note,.caution{$/;"	c
+.version	assets/custom.scss	/^.tip,.version,.note,.caution{$/;"	c
+csvFile	tools/addtowaitlist.php	/^        $csvFile = '..\/waitlist.csv';$/;"	v
+data	tools/addtowaitlist.php	/^                    $data = [$/;"	v
+directory	tools/addtowaitlist.php	/^        $directory = dirname($csvFile);$/;"	v
+directory	tools/blockchainlength.php	/^$directory = "..\/blockchain\/";$/;"	v
+email	tools/addtowaitlist.php	/^    $email = trim($_POST['email']);$/;"	v
+file	tools/addtowaitlist.php	/^                $file = fopen($csvFile, 'a');$/;"	v
+fileExists	tools/addtowaitlist.php	/^                $fileExists = file_exists($csvFile);$/;"	v
+isEmpty	tools/addtowaitlist.php	/^                $isEmpty = !$fileExists || filesize($csvFile) == 0;$/;"	v
+name	tools/addtowaitlist.php	/^    $name = trim($_POST['name']);$/;"	v
+output	tools/blockchainlength.php	/^$output = exec("ls -l $directory | egrep -c '^-'");$/;"	v
+profession	tools/addtowaitlist.php	/^    $profession = trim($_POST['profession']);$/;"	v
+response	tools/addtowaitlist.php	/^$response = [$/;"	v

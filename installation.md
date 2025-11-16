@@ -7,34 +7,15 @@ title : Installation
 
 # Installation
 
-*How to install the DCC wallet and mining program.*
+## Currently Not Open to the Public
 
-<br>
+AetherGrid is currently in a private testing phase and is not yet available for public installation.
 
-### Windows
+If you would like to request a demo or learn more about early access opportunities, please contact me to discuss your use case.
 
-{: .note .caps}
-Currently, there is no Windows version in development. You can still use DCC if you run it in **WSL (Windows Subsystem for Linux)**
+Thank you for your interest in AetherGrid!
 
-### Linux
-1. Make sure you have **[OpenSSL installed]** on your system
-2. Navigate to **[the most recent release]**, and download the **Linux** version
-3. Unzip the downloaded file
-
-### Building From Source
-1. Clone this repository in a command line using `git clone https://github.com/The-Distributed-Computing-Project/Distributed-Compute-Coin.git` OR by downloading the repository as a .ZIP file and unzipping it to your location of choice
-2. Make sure you have **[OpenSSL installed]** on your system
-3. Enter the directory `Distributed-Compute-Coin/dcc_client/out-linux`
-4. Run CMake using `cmake ..` to generate Unix Makefile
-5. Run `make -j5` to generate executable
-6. The executable is `Distributed-Compute-Coin/dcc_client/out-linux/dcc_client/dcc_client`
-
-<br>
-
-### [Now that DCC is installed, see how to begin using it][Usage]
-
-<!----------------------------------------------------------------------------->
-
-[OpenSSL installed]: https://openssl.org/
-[the most recent release]: https://github.com/The-Distributed-Computing-Project/Distributed-Compute-Coin/releases/latest
-[Usage]: Usage.html
+<div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+  <a href="join_waitlist.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">Join the Waitlist</a>
+  <a href="contact.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">Contact Us</a>
+</div>

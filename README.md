@@ -12,11 +12,7 @@ title : AetherGrid
 
 <br>
 
-<div align="center">
-
 [![Badge License]][License]   [![Button Discord]][Discord Server]      [![Badge Blockchain]][Blockchain]
-
-</div>
 
 <br>
 
@@ -34,7 +30,6 @@ Anybody can submit code using the client to be run across the peer-to-peer netwo
 
 <br>
 
----
 
 ## Condensing
 
@@ -60,7 +55,6 @@ Supercomputers are expensive to build, and equally as expensive for institutions
 
 <br>
 
----
 
 <!-- Dynamic blockchain length update -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -85,7 +79,7 @@ $(document).ready(function(){
 
 <!----------------------------------[ Badges ]--------------------------------->
 
-[Badge License]: https://img.shields.io/badge/license-DCP--GPL-brightgreen
+[Badge License]: https://img.shields.io/badge/license-DCP--GPL-lavender
 [Badge Blockchain]: https://img.shields.io/badge/blockchain_length-0_blocks-blue
 
 <!---------------------------------[ Buttons ]--------------------------------->

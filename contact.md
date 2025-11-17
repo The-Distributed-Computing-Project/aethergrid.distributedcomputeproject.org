@@ -25,7 +25,7 @@ Join our community channels for quick help and discussions:
 Before reaching out, check if your question is answered in our documentation:
 
 - [Installation Guide][Installation] - Setup and installation instructions
-- [Usage Guide][Usage] - How to use the DCC client
+- [Usage Guide][Usage] - How to use the AetherGrid client
 - [FAQ][FAQ] - Frequently asked questions
 
 <br>

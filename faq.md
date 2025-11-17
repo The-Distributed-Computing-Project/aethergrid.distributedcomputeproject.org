@@ -13,13 +13,13 @@ title : FAQ
 
 ## General Questions
 
-### What is DCC (Distributed Compute Coin)?
+### What is AetherGrid?
 
-DCC is the native cryptocurrency that powers the AetherGrid network. Contributors earn DCC by sharing their computing resources, while users spend DCC to access distributed computing power for their projects.
+AetherGrid is the native cryptocurrency that powers the AetherGrid network. Contributors earn AetherGrid tokens by sharing their computing resources, while users spend AetherGrid tokens to access distributed computing power for their projects.
 
 ### Is AetherGrid free to use?
 
-AetherGrid operates on a pay-per-use model using DCC tokens. However, if you contribute computing resources to the network, you earn DCC that can be used to run your own computations or traded.
+AetherGrid operates on a pay-per-use model using AetherGrid tokens. However, if you contribute computing resources to the network, you earn AetherGrid tokens that can be used to run your own computations or traded.
 
 ### What kind of tasks can run on AetherGrid?
 
@@ -52,16 +52,16 @@ No problem. The network automatically redistributes tasks to other available nod
 
 ## Getting Started
 
-### How do I start earning DCC?
+### How do I start earning AetherGrid tokens?
 
-1. Install the DCC client following the [Installation guide][Installation]
+1. Install the AetherGrid client following the [Installation guide][Installation]
 2. Run the client and connect to the network
 3. Configure your resource allocation preferences
-4. Start accepting computational tasks and earn DCC automatically
+4. Start accepting computational tasks and earn AetherGrid tokens automatically
 
-### How do I check my DCC balance?
+### How do I check my AetherGrid balance?
 
-Use the `dcc_client` interactive interface to view your wallet balance, transaction history, and earnings statistics.
+Use the `aethergrid_client` interactive interface to view your wallet balance, transaction history, and earnings statistics.
 
 ### Where can I get help?
 

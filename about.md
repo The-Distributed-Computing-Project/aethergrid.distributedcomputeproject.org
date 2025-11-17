@@ -25,7 +25,7 @@ The Distributed Computing Project operates on a simple principle: connect comput
 
 - **Distribute workloads** across a global network of participating nodes
 - **Ensure security** through cryptographic verification and blockchain technology
-- **Reward contributors** with DCC (Distributed Compute Coin) for sharing their resources
+- **Reward contributors** with AetherGrid tokens for sharing their resources
 - **Enable researchers** to access affordable, scalable computing power
 
 ## Key Features

@@ -13,17 +13,17 @@ title : FAQ
 
 ## General Questions
 
-### What is AetherGrid?
+### What are Aether tokens?
 
-AetherGrid is the native cryptocurrency that powers the AetherGrid network. Contributors earn AetherGrid tokens by sharing their computing resources, while users spend AetherGrid tokens to access distributed computing power for their projects.
+Aether is the native cryptocurrency that powers the AetherGrid network. Contributors earn Aether tokens by sharing their computing resources, while users spend Aether tokens to access distributed computing power for their projects.
 
 ### Is AetherGrid free to use?
 
-AetherGrid operates on a pay-per-use model using AetherGrid tokens. However, if you contribute computing resources to the network, you earn AetherGrid tokens that can be used to run your own computations or traded.
+AetherGrid operates on a pay-per-use model using Aether tokens. However, if you contribute computing resources to the network, you earn Aether tokens that can be used to run your own computations or traded.
 
 ### What kind of tasks can run on AetherGrid?
 
-AetherGrid is designed for parallelizable computational tasks including scientific simulations, data analysis, machine learning training, rendering, cryptographic operations, and other CPU-intensive workloads.
+AetherGrid is designed for parallelizable computational tasks including scientific simulations, data analysis, machine learning training, rendering, cryptographic operations, and other CPU-intensive workloads. Efffectively any task can be run using AetherGrid, but the most optimized ones would be those that are naturally parallel.
 
 <br>
 
@@ -31,10 +31,10 @@ AetherGrid is designed for parallelizable computational tasks including scientif
 
 ### What are the system requirements?
 
-- **Operating System**: Linux (Windows via WSL)
-- **Dependencies**: OpenSSL
-- **Network**: Stable internet connection
-- **Hardware**: Any modern CPU with spare capacity
+- **Operating System**: Linux (Windows via WSL, native support in progress)
+- **Dependencies**: OpenSSL, Curl
+- **CPU**: Any CPU, even of relatively low power
+- **RAM**: At least 256 MB of free capacity
 
 ### Is my data secure?
 
@@ -50,27 +50,8 @@ No problem. The network automatically redistributes tasks to other available nod
 
 <br>
 
-## Getting Started
-
-### How do I start earning AetherGrid tokens?
-
-1. Install the AetherGrid client following the [Installation guide][Installation]
-2. Run the client and connect to the network
-3. Configure your resource allocation preferences
-4. Start accepting computational tasks and earn AetherGrid tokens automatically
-
-### How do I check my AetherGrid balance?
-
-Use the `aethergrid_client` interactive interface to view your wallet balance, transaction history, and earnings statistics.
-
-### Where can I get help?
-
-Check out our [Usage guide][Usage] for detailed instructions, or reach out through our [Contact page][Contact] for additional support.
-
-<br>
-
 <!----------------------------------------------------------------------------->
 
-[Installation]: Installation.html
-[Usage]: Usage.html
-[Contact]: Contact.html
+[Installation]: installation.html
+[Usage]: usage.html
+[Contact]: contact.html

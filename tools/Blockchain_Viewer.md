@@ -1,14 +1,18 @@
-Hidden
 ---
-category: Overview
-nav_order : 2
 layout : default
 title : Blockchain Viewer
 ---
 
+# Blockchain Viewer
+
+*View individual blocks, or the status of the entire chain*
+
+{: .note}
+While AetherGrid is not open to the public, this feature is restricted.
+
 <!----------------------------------------------------------------------------->
 
-[Installation Page]: ./docs/Installation.html
+[Installation Page]: ../installation.html
 
 [License]: LICENSE
 [Discord Server]: https://discord.gg/9p82dTEdkN

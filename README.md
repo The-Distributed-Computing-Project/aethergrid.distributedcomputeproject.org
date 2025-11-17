@@ -26,7 +26,9 @@ $(document).ready(function(){
 
 A unique P2P blockchain built in C++, with a trading client and a miner. This crypto can be bought, traded, sold, mined, or used just like any other. What sets it apart though is how it can be used, and the technique for mining. It is based on sharing mining computing hardware with developers to run their programs better and compute a large amount of data quickly, using Distributed Computing. Anybody can submit code using the client to be run across the peer-to-peer network, and will pay for that using this crypto. [What sets this crypto apart?](./#condensing).
 
-<br>
+<div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content:center">
+  <a href="join_waitlist.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">Join the Waitlist</a>
+</div>
 
 
 # Condensing
@@ -51,7 +53,7 @@ Currently only Linux is directly supported. Go to the **[Installation Page]** to
 
 <!----------------------------------------------------------------------------->
 
-[Installation Page]: ./docs/Installation.html
+[Installation Page]: installation.html
 [Blockchain]: ./tools/Blockchain_Viewer.html
 
 [License]: LICENSE

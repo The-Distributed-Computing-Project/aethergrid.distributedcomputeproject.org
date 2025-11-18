@@ -3,6 +3,7 @@ category: Get Involved
 nav_order : 4
 layout : default
 title : Join Waitlist
+nav_highlight: true
 ---
 
 <style>

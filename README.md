@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 <!----------------------------------[ Badges ]--------------------------------->
 
-[Badge License]: https://img.shields.io/badge/license-DCP--GPL-lavender
+[Badge License]: https://img.shields.io/badge/license-DCP--GPL-purple
 [Badge Blockchain]: https://img.shields.io/badge/blockchain_length-0_blocks-blue
 
 <!---------------------------------[ Buttons ]--------------------------------->

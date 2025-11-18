@@ -1,6 +1,4 @@
 ---
-category: Overview
-nav_order : 5
 layout : default
 title : FAQ
 ---

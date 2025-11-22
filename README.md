@@ -3,7 +3,6 @@ category: Overview
 permalink : /
 nav_order : 0
 layout : default
-title : AetherGrid
 ---
 
 <div align=center style="align-content:center">

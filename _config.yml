@@ -28,16 +28,6 @@ email: "samuelhparent@gmail.com"
 title: "AetherGrid"
 description: "A distributed computing platform for the people"
 
-head_extra: |
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ1MVQZY32"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XZ1MVQZY32');
-  </script>
-
 
 github:
   owner_name: The-Distributed-Computing-Project
@@ -46,6 +36,16 @@ github:
 
 favicon:
   source: favicon.ico
+
+head_extra: |
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VB75NXBDN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4VB75NXBDN');
+  </script>
 
 search:
 

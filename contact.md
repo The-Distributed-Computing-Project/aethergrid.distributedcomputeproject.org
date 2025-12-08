@@ -34,7 +34,7 @@ Before reaching out, check if your question is answered in our documentation:
 
 For business or general questions about AetherGrid and the Distributed Computing Project:
 
-- **Email**: samuelhparent@gmail.com
+- **Email**: me@samuelhp.com
 
 ### Technical Support
 

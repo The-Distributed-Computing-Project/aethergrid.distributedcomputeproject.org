@@ -26,7 +26,7 @@ We're building a decentralized computing platform that makes high-performance co
 
 ## How to Apply
 
-**Contact**: <a href="mailto:samuelhparent@gmail.com">samuelhparent@gmail.com</a>
+**Contact**: <a href="mailto:me@samuelhp.com">me@samuelhp.com</a>
 
 <br>
 

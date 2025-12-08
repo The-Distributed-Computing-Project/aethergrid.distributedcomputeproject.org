@@ -61,7 +61,7 @@ Need custom pricing or dedicated resources? We offer:
 - Custom billing arrangements
 - On-premise integration options
 
-**Contact us**: me@samuelhp.com
+**Contact us**: contact@aethergrid.org
 
 <br>
 
